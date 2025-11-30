@@ -1,0 +1,103 @@
+
+@theme {
+  extend: {
+    backgroundImage: {
+      'dark-nebula': 'linear-gradient(to bottom, #000000, #070613, #080817, #090B1B, #0A0C1F, #0E0D26, #0E1E2A, #180F2E, #1D1236, #191339, #141A3D, #161B41, #161745, #181B49, #191D4D, #1D1B50, #1B2150, #1D1B50, #191D4D, #181B49, #161745, #161B41, #141A3D, #191339, #1D1236, #180F2E, #0E1E2A, #0E0D26, #0A0C1F, #090B1B, #080817, #070613, #000000)',
+    },
+  },
+}
+
+body {
+    @apply bg-dark-nebula;
+}
+
+
+
+/* Vždy zachová text na jednom riadku */
+/* @apply md:whitespace-nowrap xs:whitespace-pre-wrap; */
+
+:root {
+    COLORS 
+    --main-txt: white;
+     FONTS 
+    --main-font: 'Courier New', Courier, monospace;
+    --heading-font: ;
+} 
+
+body {
+    max-width: 950px;
+    margin: 0 auto;
+    background: var(--main-bg);
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 200px;
+    margin: 75px 10px;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 25px;
+    padding: 8px 16px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.main-vid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    max-width: 20px;
+    margin: 0 auto;
+}
+
+.vid {
+    width: 300px;
+    height: 168.75px;
+    margin: 25px 50px;
+}
+
+.vid iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.vid:hover, .vid:active {
+
+    width: 560px;
+    height: 315px;
+    transform: translate(-130px, -73.125px);
+    z-index: 10;
+}
+

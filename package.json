@@ -1,0 +1,36 @@
+{
+  "name": "marian-kapitan",
+  "version": "1.0.0",
+  "description": "\"# Portfolio of education and experience in IT\"",
+  "main": "postcss.comfig.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  
+  "scripts": {
+    "dev:tailwind": "tailwindcss -i ./css/main.css -o ./dist/output.css --watch",
+    "dev:server": "live-server dist/ --port=3000",
+    "copy:html": "cp index.html dist/index.html",
+    "copy:js": "copyfiles -u 1 js/*.js dist/js/",
+    "copy:img": "cp -r img/ dist/img/",
+    "watch:html": "nodemon --ext html --ignore dist/ --exec \"npm run copy:html\"",
+    "watch:js": "nodemon --watch js/ --ext js --exec \"npm run copy:js\"",
+    "dev": "npm run copy:html && npm run copy:js && npm run copy:img && npm-run-all -p dev:tailwind dev:server watch:html watch:js",
+    "build": "npm-run-all copy:html copy:js build:css",
+    "build:css": "postcss css/main.css -o dist/output.css",
+    "start": "live-server dist/ --port=3000"
+  },
+
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "copyfiles": "^2.4.1",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

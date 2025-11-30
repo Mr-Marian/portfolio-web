@@ -1,0 +1,15 @@
+"scripts": {
+    "dev:tailwind": "tailwindcss -i ./css/main.css -o ./dist/output.css --watch",
+    "build:init": "tailwindcss -i ./css/main.css -o ./dist/output.css",
+    "dev:server": "live-server dist/",
+    "copy:html": "cp index.html dist/index.html",
+    "copy:js": "npx copyfiles -u 1 js/*.js dist/js/",
+    "copy:img": "cp -r img/ dist/img/",
+    "watch:html": "nodemon --ext html --exec \"npm run copy:html\"",
+    "watch:js": "nodemon --watch js/ --ext js --exec \"npm run copy:js\"",
+    "dev": "npm run copy:html && npm run copy:js && npm run copy:img && npm run build:init && npm-run-all -p dev:tailwind dev:server watch:html watch:js",
+    "build": "npm-run-all copy:html copy:js build:css",
+    "build:css": "postcss css/main.css -o dist/output.css",
+    "build:tailwind": "tailwindcss -i ./css/main.css -o ./dist/output.css --minify",
+    "start": "live-server dist/"
+  },
