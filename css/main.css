@@ -19,11 +19,6 @@
         @apply text-white my-4 py-2;
     }    
 
-    ul {
-        @apply font-courier italic font-extrabold text-[2vw];
-        @apply text-[#fc84c6]; /* Alt. colors: purple-400; #fc84f8 */
-    }
-
     q {
         @apply text-[2vw] xs:text-[6vw] sm:text-[4vw] lg:text-[2vw];
     }
@@ -46,6 +41,12 @@
 
     .email-icon {
         @apply text-blue-500;
+    }
+
+    #main-menu-ul {
+        font-size: var(--menu-font-size, 2vw); 
+        @apply font-courier italic font-extrabold;
+        @apply text-[#fc84c6];
     }
 
     /* MAIN */

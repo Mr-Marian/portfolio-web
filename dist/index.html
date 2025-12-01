@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header>
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark-nebula transition-all duration-300">
         <div class="container">
-            <div class="topbar flex flex-col items-center py-4 md:flex-row sm:justify-between">
-                
-                <img src="./img/logo-daddy-gammer-beginner-rounded-nobg.png" alt="logo daddy gamer beginner" class="logo-img xs:w-full xs:h-auto xs:block sm:h-40 sm:w-auto">
-                
+            <div id="topbar-container" class="topbar flex flex-col items-center py-4 md:flex-row sm:justify-between">
+                <a href="/">
+                    <img 
+                        id="logo-img" 
+                        src="./img/logo-daddy-gammer-beginner-rounded-nobg.png" 
+                        alt="logo daddy gamer beginner" 
+                        class="logo-img 
+                        xs:w-full xs:h-auto 
+                        xs:block 
+                        sm:h-40 sm:w-auto
+                        travslation-all duration-300">
+                </a>
                 <div class="contact flex lg:mr-[52px] lg:align-top  xs:justify-between xs:align-middle xs:mt-4">
                     <a href="https://wa.me/639451638815" 
                     target="_blank" 
@@ -37,20 +45,20 @@
                 </div>
                 
             </div>
-            <menu class="main-menu my-10 hidden xl:block">
-                <ul class="flex content-center justify-evenly">
-                    <li><a href="/">Portfolio</a></li>
-                    <li><a href="/">Studying</a></li>
-                    <li><a href="/">Activities</a></li>
-                    <li><a href="/">No go zone</a></li>
-                    <li><a href="/">Contact</a></li>
+            <menu id="main-menu" class="main-menu my-10 hidden xl:block transition-all duration-300">
+                <ul id="main-menu-ul" class="flex content-center justify-evenly">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#studying">Studying</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#gaming">Gaming</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </menu>
         </div>
     </header>
-    <main>
+    <main class="pt-[22rem]">
         <div class="sections container">
-            <section>
+            <section id="home">
                 <h1 class="text-mask image-version" 
                 id="mask-target">MARIAN KAPITAN</h1> <!--Yllana Production-->
                 <div class="motto">
@@ -79,8 +87,6 @@
                         </div>                                      
                     </div>
                 </div>
-            </section>
-            <section>
                 <div class="main-box flex justify-between my-20">
                     <div class="box bg-purple-800"></div>
                     <div class="box bg-blue-900"></div>
@@ -95,19 +101,26 @@
                     <div class="box bg-red-800"></div>
                 </div>
             </section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section id="portfolio"> 
+                <!-- Nastudovat nastavenie nahladu stranok pre desktop resp. mobilne verzie a presmerovanie na stranku po kliknuti na nahlad -->
+            </section>
+            <section id="studying">
+                <!-- Vsetko co sa ucim priklady, riesenia uloh-->
+            </section>
+            <section id="activities">
+                <!-- Cestovanie a vsetky videa (alebo aspon cast) z youtube -->
+            </section>
+            <section id="gaming">
+                <!-- Link na herne videa -->
+            </section>
+            <section id="contact">
+                <!-- Standardne kontaktne odkazy, formular, adresa, mapa atd. -->
+            </section>
         </div>
     </main>
     <footer>
 
     </footer>
-    
+    <script src="./js/header.js"></script>
 </body>
 </html>
