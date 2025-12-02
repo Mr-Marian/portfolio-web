@@ -9,42 +9,50 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark-nebula transition-all duration-300">
+    <header id="main-header" class="xl:fixed xl:top-0 xl:left-0 xl:w-full xl:z-50 bg-dark-nebula transition-all duration-300">
         <div class="container">
-            <div id="topbar-container" class="topbar flex flex-col items-center py-4 md:flex-row sm:justify-between">
+            <div id="topbar-container" class="topbar flex flex-col sm:flex-row items-center py-4 sm:justify-between">
                 <a href="/">
                     <img 
                         id="logo-img" 
                         src="./img/logo-daddy-gammer-beginner-rounded-nobg.png" 
                         alt="logo daddy gamer beginner" 
                         class="logo-img 
-                        xs:w-full xs:h-auto 
+                        xs:w-auto xs:h-30
                         xs:block 
-                        sm:h-40 sm:w-auto
+                        sm:h-40 sm:w-auto 
                         travslation-all duration-300">
                 </a>
-                <div class="contact flex lg:mr-[52px] lg:align-top  xs:justify-between xs:align-middle xs:mt-4">
-                    <a href="https://wa.me/639451638815" 
-                    target="_blank" 
-                    rel="noopener noreferre" 
-                    class="contacts flex items-center text-[#25D366] hover:text-[#128C7E] transition duration-300 group" 
-                    title="Kontakt cez WhatsApp">
-                    
-                        <i class="fab fa-whatsapp text-2xl whatsapp-icon"></i> 
-                    
-                        <span class="ml-2 font-medium">WhatsApp</span>
-                    </a>
-                    <a href="mailto:marian.kapitan85@gmail.com" 
-                    class="contacts flex items-center text-blue-500 hover:text-blue-900 transition duration-300 group"
-                    title="Poslať E-mail">
-                    
-                        <i class="fas fa-envelope text-2xl email-icon"></i>
+                <div class="right-block flex items-center ">
+                    <div class="contact flex lg:mr-[52px] lg:align-top  xs:justify-between xs:align-middle xs:mt-4">
+                        <a href="https://wa.me/639451638815" 
+                        target="_blank" 
+                        rel="noopener noreferre" 
+                        class="contacts flex items-center text-[#25D366] hover:text-[#128C7E] transition duration-300 group" 
+                        title="Kontakt cez WhatsApp">
                         
-                        <span class="ml-2 font-medium">E-mail</span>
-                    </a>
-                </div>
-                
-            </div>
+                            <i class="fab fa-whatsapp text-2xl whatsapp-icon p-2"></i> 
+                        
+                            <span class="ml-2 font-medium hidden md:block">WhatsApp</span>
+                        </a>
+                        <a href="mailto:marian.kapitan85@gmail.com" 
+                        class="contacts flex items-center text-blue-500 hover:text-blue-900 transition duration-300 group"
+                        title="Poslať E-mail">
+                        
+                            <i class="fas fa-envelope text-2xl email-icon p-2"></i>
+                            
+                            <span class="ml-2 font-medium hidden md:block">E-mail</span>
+                        </a>
+                    </div> 
+                    <button id="burger-btn" class="xl:hidden p-2 w-8 h-8 relative focus:outline-none mt-4 ml-2 md:ml-4" aria-label="Menu">
+                        <div class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-white transform transition duration-500 ease-in-out -translate-y-1.5"></span>
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-white transform transition duration-500 ease-in-out"></span>
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-white transform transition duration-500 ease-in-out translate-y-1.5"></span>
+                        </div>
+                    </button> 
+                </div>              
+            </div>            
             <menu id="main-menu" class="main-menu my-10 hidden xl:block transition-all duration-300">
                 <ul id="main-menu-ul" class="flex content-center justify-evenly">
                     <li><a href="#portfolio">Portfolio</a></li>
@@ -56,7 +64,7 @@
             </menu>
         </div>
     </header>
-    <main class="pt-[22rem]">
+    <main class="xl:pt-[22rem]">
         <div class="sections container">
             <section id="home">
                 <h1 class="text-mask image-version" 
@@ -122,5 +130,6 @@
 
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/burger-menu.js"></script>
 </body>
 </html>
