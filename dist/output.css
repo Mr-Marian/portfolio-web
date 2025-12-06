@@ -689,6 +689,11 @@ q{
   text-align: center;
 }
 
+#main-menu .menu-item:hover{
+  --tw-text-opacity: 1;
+  color: rgb(190 24 93 / var(--tw-text-opacity, 1));
+}
+
 @media (max-width: 529.9px) {
   #main-menu-ul {
     font-size: 5vw;
@@ -844,6 +849,14 @@ q{
   margin-left: 0.5rem;
 }
 
+.mr-\[25px\]{
+  margin-right: 25px;
+}
+
+.mr-\[50px\]{
+  margin-right: 50px;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -874,6 +887,10 @@ q{
 
 .w-3\/5{
   width: 60%;
+}
+
+.w-48{
+  width: 12rem;
 }
 
 .w-5{
@@ -918,6 +935,10 @@ q{
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -1012,6 +1033,10 @@ q{
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-2xl{
@@ -1147,6 +1172,10 @@ q{
 
   .md\:block{
     display: block;
+  }
+
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 }
 

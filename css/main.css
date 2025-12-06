@@ -43,11 +43,17 @@
         @apply text-blue-500;
     }
 
+    
+
     #main-menu-ul {
         font-size: var(--menu-font-size, 2vw); 
         @apply font-courier italic font-extrabold;
         @apply text-[#fc84c6];
         @apply text-center;
+    }
+
+    #main-menu .menu-item {
+         @apply hover:text-pink-700;
     }
     @media (max-width: 529.9px) {
         #main-menu-ul {
