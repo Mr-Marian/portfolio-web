@@ -23,6 +23,29 @@ body {
     --main-font: 'Courier New', Courier, monospace;
     --heading-font: ;
 } 
+:root {
+        --menu-font-size: 0.9rem;
+    }
+    @media (min-width: 640px) {
+        :root {
+            --menu-font-size: 1rem; 
+        }
+    }
+        @media (min-width: 768px) {
+        :root {           
+            --menu-font-size: 1.8vw; 
+        }
+    }
+        @media (min-width: 768px) {
+        :root {
+            --menu-font-size: 1.8vw; 
+        }
+    }
+        @media (min-width: 1024px) {
+        :root {
+            --menu-font-size: 2vw; 
+        }
+    }
 
 body {
     max-width: 950px;
