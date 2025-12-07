@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <header id="main-header" class="xl:fixed xl:top-0 xl:left-0 xl:w-full xl:z-50 bg-dark-nebula transition-all duration-300">
+    <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-dark-nebula transition-all duration-300">
         <div class="container">
             <div id="topbar-container" class="topbar flex flex-col sm:flex-row items-center py-4 sm:justify-between">
                 <a href="/">
@@ -21,7 +21,7 @@
                         xs:w-auto xs:h-30
                         xs:block 
                         sm:h-40 sm:w-auto 
-                        travslation-all duration-300">
+                        translation-all duration-300">
                 </a>
                 <div class="right-block flex items-center ">
                     <div class="contact flex lg:mr-[52px] lg:align-top  xs:justify-between xs:align-middle xs:mt-4">
@@ -31,7 +31,7 @@
                         class="contacts flex items-center text-[#25D366] hover:text-[#128C7E] transition duration-300 group" 
                         title="Kontakt cez WhatsApp">
                         
-                            <i class="fab fa-whatsapp text-2xl whatsapp-icon p-2"></i> 
+                            <i class="fab fa-whatsapp text-2xl whatsapp-icon p-2 group-hover:text-[#128C7E] transition duration-300"></i> 
                         
                             <span class="ml-2 font-medium hidden md:block">WhatsApp</span>
                         </a>
@@ -39,7 +39,7 @@
                         class="contacts flex items-center text-blue-500 hover:text-blue-900 transition duration-300 group"
                         title="Poslať E-mail">
                         
-                            <i class="fas fa-envelope text-2xl email-icon p-2"></i>
+                            <i class="fas fa-envelope text-2xl email-icon p-2 group-hover:text-blue-900 transition duration-300"></i>
                             
                             <span class="ml-2 font-medium hidden md:block">E-mail</span>
                         </a>
@@ -130,6 +130,6 @@
 
     </footer>
     <script src="./js/header.js"></script>
-    <script src="./js/burger-menu-5.js"></script>
+    <script src="./js/burger-menu.js"></script>
 </body>
 </html>

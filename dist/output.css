@@ -815,6 +815,10 @@ q{
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -823,8 +827,20 @@ q{
   position: relative;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .left-1\/2{
   left: 50%;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-1\/2{
@@ -833,6 +849,14 @@ q{
 
 .top-\[70px\]{
   top: 70px;
+}
+
+.z-40{
+  z-index: 40;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .my-10{
@@ -865,6 +889,10 @@ q{
   display: block;
 }
 
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -885,6 +913,10 @@ q{
   height: 2rem;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-3\/5{
   width: 60%;
 }
@@ -899,6 +931,10 @@ q{
 
 .w-8{
   width: 2rem;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .-translate-x-1\/2{
@@ -931,6 +967,10 @@ q{
 
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1035,6 +1075,10 @@ q{
   padding-bottom: 1rem;
 }
 
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1107,6 +1151,16 @@ q{
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.group:hover .group-hover\:text-\[\#128C7E\]{
+  --tw-text-opacity: 1;
+  color: rgb(18 140 126 / var(--tw-text-opacity, 1));
+}
+
+.group:hover .group-hover\:text-blue-900{
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 320px){
@@ -1194,24 +1248,8 @@ q{
 }
 
 @media (min-width: 1280px){
-  .xl\:fixed{
-    position: fixed;
-  }
-
-  .xl\:left-0{
-    left: 0px;
-  }
-
   .xl\:right-1\/4{
     right: 25%;
-  }
-
-  .xl\:top-0{
-    top: 0px;
-  }
-
-  .xl\:z-50{
-    z-index: 50;
   }
 
   .xl\:block{
@@ -1220,10 +1258,6 @@ q{
 
   .xl\:hidden{
     display: none;
-  }
-
-  .xl\:w-full{
-    width: 100%;
   }
 
   .xl\:flex-row{
