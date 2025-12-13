@@ -15,9 +15,46 @@
         @apply flex align-middle justify-center;
     }
 
-    h1 {
+    h1, h2 {
         @apply text-white my-4 py-2;
     }    
+
+    h2 {
+        font-size: var(--h2-font-size, 3vw); 
+        @apply font-courier italic font-extrabold;
+        @apply text-[#fc84c6];
+    } 
+    @media (max-width: 529.9px) {
+        h2 {
+            font-size: 8vw;
+        }
+    }
+    @media (min-width: 530px) and (max-width: 579.9px) {
+        h2 {
+            font-size: 7vw;            
+        }
+    }
+    @media (min-width: 580px) and (max-width: 639.9px) {
+        h2 {
+            font-size: 6vw;
+        }
+    }
+    @media (min-width: 640px) and (max-width: 767.9px) {
+        h2 {
+            font-size: 5vw;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 939.9px) {
+        h2 {
+            font-size: 4vw;
+        }
+    }
+    @media (min-width: 940px) and (max-width: 1024.9px) {
+        h2 {
+            font-size: 3.5vw;
+        }        
+    }
+
 
     q {
         @apply text-[2vw] xs:text-[6vw] sm:text-[4vw] lg:text-[2vw];
@@ -91,6 +128,8 @@
 
     /* MAIN */
 
+    /* Section #home */
+
     .text-mask {
         @apply font-anton font-black leading-none text-center;
         @apply text-[11vw] xs:text-[14vw];
@@ -108,6 +147,52 @@
 
     .box {
         @apply w-5 h-5 sm:w-10 sm:h-10 md:w-[60px] md:h-[60px] lg:w-20 lg:h-20;
+    }
+
+    /* Section #portfolio */
+    .center {
+        @apply max-w-[1284px] mx-auto;
+    }
+
+    .description {
+        @apply pl-4;
+    }
+
+   .description > p {
+        font-size: var(--description-font-size, 2vw)
+    }
+    @media (max-width: 529.9px) {
+        .description > p {
+            font-size: 4.5vw;
+        }
+    }
+    @media (min-width: 530px) and (max-width: 579.9px) {
+        .description > p {
+            font-size: 4vw;            
+        }
+    }
+    @media (min-width: 580px) and (max-width: 639.9px) {
+        .description > p {
+            font-size: 3.5vw;
+        }
+    }
+    @media (min-width: 640px) and (max-width: 767.9px) {
+        .description > p {
+            font-size: 3vw;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 939.9px) {
+        .description > p {
+            font-size: 2.5vw;
+        }
+    }
+    @media (min-width: 940px) and (max-width: 1024.9px) {
+        .description > p {
+            font-size: 2vw;
+        } 
+    }
+    .portfolio_item {
+        @apply max-w-[630px];
     }
 }
 
