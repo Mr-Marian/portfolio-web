@@ -67,8 +67,7 @@
     <main class="xl:pt-[22rem]">
         <div class="sections container">
             <section id="home">
-                <h1 class="text-mask image-version" 
-                id="mask-target">MARIAN KAPITAN</h1> <!--Yllana Production-->
+                <h1 id="mask-target" class="text-mask image-version">MARIAN KAPITAN</h1> <!--Yllana Production-->
                 <div class="motto">
                     <span class="xs:hidden md:block">Motto:</span>
                     <q>You never know what you can do until you try</q>
@@ -109,8 +108,36 @@
                     <div class="box bg-red-800"></div>
                 </div>
             </section>
-            <section id="portfolio"> 
-                <!-- Nastudovat nastavenie nahladu stranok pre desktop resp. mobilne verzie a presmerovanie na stranku po kliknuti na nahlad -->
+            <section id="portfolio">
+                <div class="description center">
+                    <h2 id="portfolio" class="flex flex-col align-center">Portfolio</h2><!-- Nastudovat nastavenie nahladu stranok pre desktop resp. mobilne verzie a presmerovanie na stranku po kliknuti na nahlad -->
+                    <p id="portfolio-p" class="text-white pb-4">Overview of works and work in progress</p>
+                </div> 
+                <div id="portfolio-list" class="mx-auto my-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="https://marian-kapitan.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio_item aspect-[21/11] bg-gray-100 rounded-md overflow-hidden hover:shadow-lg transition block group">
+                        <img 
+                            src="img/marian-kapitan-preview.jpg" 
+                            alt="Marián Kapitán Website" 
+                            class="w-full h-full object-cover transition group-hover:scale-105"
+                        >
+                    </a>
+                    
+                    <a href="https://openlab-mk.netlify.app/" target="_blank" rel="noopener noreferrer" class="portfolio_item aspect-[21/11] bg-gray-100 rounded-md overflow-hidden hover:shadow-lg transition block group">
+                        <img 
+                            src="img/OpenLab-mk-preview.jpg" 
+                            alt="OpenLab MK Website" 
+                            class="w-full h-full object-cover transition group-hover:scale-105"
+                        >
+                    </a>
+                    
+                    <a href="https://workinslovakia.eu/" target="_blank" rel="noopener noreferrer" class="portfolio_item aspect-[21/11] bg-gray-100 rounded-md overflow-hidden hover:shadow-lg transition block group">
+                        <img 
+                            src="img/Work-in-Slovakia-preview.png" 
+                            alt="Work in Slovakia Website" 
+                            class="w-full h-full object-cover transition group-hover:scale-105"
+                        >
+                    </a>                    
+                </div>
             </section>
             <section id="studying">
                 <!-- Vsetko co sa ucim priklady, riesenia uloh-->
